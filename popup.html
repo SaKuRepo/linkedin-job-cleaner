@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LinkedIn Job Cleaner</title>
+<style>
+  /* existing styles ... */
+  button {
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #e60023;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button:hover {
+    background-color: #b3001b;
+  }
+
+.achievements {
+  margin-top: 15px;
+  font-size: 13px;
+}
+.achievements ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.achievements li {
+  margin-bottom: 5px;
+}
+
+</style>
+
+</head>
+<body>
+  <h3>Job Cleaner</h3>
+  <label>
+    <input type="checkbox" id="toggleCleaner" />
+    Hide Promoted Jobs
+  </label>
+
+<div class="stats">
+  <p><strong>Removed this session:</strong> <span id="sessionCount">0</span></p>
+  <p><strong>Total removed:</strong> <span id="totalCount">0</span></p>
+  <button id="resetBtn">Reset Stats</button>
+</div>
+
+<div class="achievements">
+  <h4>Achievements</h4>
+  <ul id="achievementsList" style="padding-left: 20px;"></ul>
+</div>
+
+
+  <script src="popup.js"></script>
+</body>
+</html>
